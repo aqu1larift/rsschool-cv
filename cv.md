@@ -12,3 +12,21 @@ Hello. I am 25 years old. I don't have a background in information technology, I
 
 Javascript knowledge for solving the simplest tasks
 
+## Code:
+
+`const smallesDivisor = (n) => {
+    if (n === 1) {
+        return 1;
+    }
+        const iteration = (counter) => {
+            if (n % counter === 0) {
+                return counter;
+            } else if (counter < n) {
+                return iteration(counter + 1);
+            }
+            return counter;
+        };
+    return iteration(2);
+};`
+
+### English: beginner
